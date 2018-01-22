@@ -5,7 +5,5 @@ install:
   - pip install -r requirements.txt
 script:
   - ls -la
-  - ls -la leaderboard
-  - pwd
-  - find ./ -name '*.py'
-  - ./build.sh
+  - pycodestyle ./leaderboard/warbadge_app/*.py
+# TODO: Add badge codestyle
